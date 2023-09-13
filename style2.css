@@ -1,0 +1,318 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #010122;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+    max-height: 22.5px;
+    z-index: 1000;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 75px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    position: relative;
+    font-size: 20px;
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #1c8be6;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+nav ul li a:active {
+    color: #81818a;
+}
+header img {
+    width: calc(100% - 80px);
+    margin-left: 50px;
+    display: block;
+}
+header .image img {
+    max-height: 60px;
+    width: auto;
+}
+
+/*fim do header*/
+
+.section1 {
+    background: #050536;
+    padding: 20px;
+}
+
+.section2 {
+    background: #ffffff;
+    padding: 20px;
+}
+
+.section3 {
+    background: #0205b1;
+    padding: 20px;
+}
+
+/*section 1*/
+
+.text-box {
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+    border-radius: 70px;
+    padding: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-left:210px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.301);
+    margin-top:80px;
+}
+
+.text-box p {
+    margin: 0;
+    color: #000000;
+    font-size: 25px;
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+}
+.image-box img {
+    max-height: 400px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(133, 133, 133, 0.459);
+}
+
+.image-box {
+    float: left;
+    border: 30px solid #080842; 
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 300px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background: #080842;
+    background-size: cover;
+    width: 400px; 
+    height: 400px; 
+    border-radius: 25px;
+    margin-top: 80px;
+}
+
+/*fim da section 1*/
+/*section 2*/
+
+.text-box2 {
+    background-color: #050536;
+    border: 0px solid #ffffff;
+    border-radius: 70px;
+    padding: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-left:160px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.651);
+}
+
+.text-box2 p {
+    margin: 0;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+}
+.image-box2 img {
+    max-height: 400px;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgb(37, 37, 37);
+}
+
+.image-box2 {
+    float: left;
+    border: 30px solid #cacaca; /* Largura da borda e cor */
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 200px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background: #cacaca;
+    background-size: cover;
+    width: 600px; 
+    height: 400px;
+    border-radius: 25px;
+}
+
+/*fim da section 2*/
+/*texto acima das imagens section 3*/
+.text-box3 {
+    background-color: #ffffff;
+    border: 0px solid #ffffff;
+    border-radius: 70px;
+    padding: 20px;
+    float: left;
+    margin-right: 20px;
+    margin-left:570px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.582);
+}
+.text-box3 p {
+    margin: 0;
+    color: #000000;
+    font-size: 25px;
+    font-family: Snell Roundhand, cursive;
+    text-align: center;
+}
+/*fim do texto*/
+/* Estilo para as caixas de imagem na section3 */
+.image-box3 {
+    float: left;
+    border: 3px solid #ffffff; 
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 180px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background: #cacaca;
+    background-size: cover;
+    width: 350px;
+    height: 250px;
+    border-radius: 25px;
+    background: url('imagens/kimono5.avif') no-repeat center center;
+    background-size: cover;
+}
+.image-box4 {
+    float: left;
+    border: 3px solid #ffffff;
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 180px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background: #cacaca;
+    background-size: cover;
+    width: 350px; 
+    height: 250px; 
+    border-radius: 25px;
+    background: url('imagens/kimono4.jpg') no-repeat center center;
+    background-size: cover;
+}
+.image-box5 {
+    float: left;
+    border: 3px solid #ffffff; 
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 180px; 
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background: #cacaca;
+    background-size: cover;
+    width: 350px;
+    height: 250px; 
+    border-radius: 25px;
+    background: url('imagens/kimono6.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+/*fim das imagens*/
+
+.seta{
+    bottom: 60px;
+    position: fixed;
+    text-decoration: none;
+    right: 5px;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+footer {
+    background-color: #000000;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 10px 0;
+    height: 32px;
+}
+@media (max-width: 1280px){
+
+.text-box{
+    margin-left: 60px;
+    margin-top: 155px;
+}
+.image-box{
+    margin-left: 90px;
+    margin-top: 155px;
+}
+.text-box2 {
+    padding: 5px;
+    margin-right: 20px;
+    margin-left:80px;
+}
+
+.text-box2 p {
+    font-size: 20px;
+}
+.image-box2 img {
+    max-height: 270px;
+}
+
+.image-box2 {
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 70px;
+    width: 405px; 
+    height: 270px;
+}
+.text-box3 {
+    padding: 20px;
+    margin-right: 20px;
+    margin-left:300px;
+    margin-top: -75px;
+}
+.text-box3 p {
+    font-size: 25px;
+}
+.image-box3 {
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 65px;
+    width: 320px;
+    height: 220px;
+}
+.image-box4 {
+    padding: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 320px; 
+    height: 220px; 
+}
+.image-box5 {
+    padding: 10px;
+    margin-right: 20px;
+    margin-left: 20px; 
+    width: 320px;
+    height: 220px; 
+}
+
+}
+
